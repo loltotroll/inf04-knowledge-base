@@ -1,5 +1,5 @@
 # Aplikacje zakładkowe 
-W Xamarin.Forms głównym kontenerem dla zakładek jest element TabbedPage w pliku MainPage.xaml. To właśnie tam modyfikujemy i dodajemy zakładki do naszej aplikacji.
+W Xamarin.Forms głównym kontenerem dla zakładek jest element TabbedPage w pliku MainPage.xaml . To właśnie tam modyfikujemy i dodajemy zakładki do naszej aplikacji.
 
 # Krok 1: Stwórz podstrony
 Przygotuj nową stronę: Stwórz nową stronę (np. prawy przycisk myszy na projekt -> Add -> New Item -> Content Page) i nazwij ją np. Page1.xaml.
@@ -48,20 +48,14 @@ public  partial class MainPage : TabbedPage
 Właściwość Title: To najważniejszy atrybut. Jeśli go pominiesz, zakładka może się pojawić, ale nie będzie na niej żadnego tekstu.
 
 Istnieje możliwość, że w poleceniu trzeba będzie dodać ikone do zakładek, wtedy używamy atrybutu: 
-```cs
+```
 IconImageSource="ikona.png"
 ```
 Pliki ikon należy umieścić w katalogu Resources (Android/iOS)
 
+
 Kolejność: Zakładki wyświetlają się w takiej kolejności, w jakiej są zapisane w kodzie (od góry do dołu w XAML).
 
-MainPage.xaml MUSI dziedziczyć po TabbedPage. Czyli zamiast następującego kodu w MainPage.xaml.cs
-```cs
-public partial class MainPage : ContentPage
-```
-musi być
-```cs
-public partial class MainPage : TabbedPage
-```
+MainPage.xaml MUSI dziedziczyć po TabbedPage.
 
-Strony natomiast muszą normalnie dziedziczyć po ContentPage.
+Strony muszą dziedziczyć po ContentPage.
