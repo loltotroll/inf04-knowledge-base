@@ -4,22 +4,13 @@ W Xamarin.Forms głównym kontenerem dla zakładek jest element TabbedPage w pli
 # Krok 1: Stwórz podstrony
 Przygotuj nową stronę: Stwórz nową stronę (np. prawy przycisk myszy na projekt -> Add -> New Item -> Content Page) i nazwij ją np. Page1.xaml.
 
-<<<<<<< HEAD
-# 2 Krok
-Zdefiniuj przestrzeń nazw (jeśli nowa strona jest w innym folderze): Upewnij się, że w nagłówku TabbedPage masz zadeklarowane `xmlns:mypages="clr-namespace:TwojaNazwaProjektu"`.
-=======
 # Krok 2: Przygotuj MainPage.xaml
 Zdefiniuj przestrzeń nazw (jeśli nowa strona jest w innym folderze): Upewnij się, że w nagłówku TabbedPage masz zadeklarowane xmlns:mypages="clr-namespace:TwojaNazwaProjektu".
->>>>>>> 133618f (usprawnienie treści aplikaji zakladkowych)
 
 Musisz zmienić główny kontener strony z ContentPage na TabbedPage. Otwórz MainPage.xaml i zamień początkowy tag
 
-<<<<<<< HEAD
-```xaml
-=======
 MainPage.xaml:
 ```
->>>>>>> 133618f (usprawnienie treści aplikaji zakladkowych)
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:mypages="clr-namespace:TwojaNazwaProjektu"
@@ -28,12 +19,8 @@ MainPage.xaml:
 # 3 Krok
 Dodaj element strony: Wewnątrz znaczników ```<TabbedPage> ... </TabbedPage>``` dopisz nową zakładkę:
 
-<<<<<<< HEAD
-```xaml
-=======
 MainPage.xaml:
 ``` 
->>>>>>> 133618f (usprawnienie treści aplikaji zakladkowych)
 <TabbedPage.Children>
     <mypages:Page1 Title="Opis"></mypages:Page1>
     <mypages:Page2 Title="Kalkulator"></mypages:Page2>
